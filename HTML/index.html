@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>未来大学 | University of Tomorrow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Serif+SC:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/advanced.css" />
+    <link rel="stylesheet" href="../CSS/interactions.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+    <div class="page-progress" id="page-progress"></div>
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#top" aria-label="未来大学首页">
+        <span class="brand-mark">U</span>
+        <span><b>未来大学</b><i>UNIVERSITY OF TOMORROW</i></span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#news">新闻</a><a href="#focus">专题</a><a href="#campus">校园</a><a href="#about">关于我们</a>
+      </nav>
+      <div class="header-tools">
+        <button class="language" aria-label="切换语言">EN</button>
+        <button class="menu-button" id="menu-button" aria-label="打开菜单"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <aside class="menu-panel" id="menu-panel" aria-hidden="true">
+      <div class="menu-grid">
+        <a href="#news"><span>01</span>新闻中心</a><a href="#focus"><span>02</span>前沿研究</a>
+        <a href="#campus"><span>03</span>校园生活</a><a href="#about"><span>04</span>学校概览</a>
+      </div>
+      <p>In the pursuit of possibility.</p>
+    </aside>
+
+    <main id="top">
+      <section class="hero" aria-label="学校主视觉">
+        <div class="hero-image"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-spotlight" id="hero-spotlight"></div>
+        <div class="grid-lines"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span></span> EST. 2026 / SHANGHAI</p>
+          <h1>向未知<br /><em>生长</em></h1>
+          <p class="hero-copy">让知识穿越边界，让每一次好奇<br />都有抵达未来的力量。</p>
+          <a class="round-link" href="#focus"><span>探索此刻</span><i data-lucide="arrow-down-right"></i></a>
+        </div>
+        <div class="hero-meta"><span>SCROLL TO DISCOVER</span><span class="meta-line"></span><span id="clock">00:00:00</span></div>
+        <div class="hero-count"><b>01</b><span>/</span><small>04</small></div>
+        <div class="hero-caption"><span>智造学术 · 共创世界</span><span>31.2304° N, 121.4737° E</span></div>
+        <div class="signal-card"><div><span class="signal-dot"></span> LIVE / CAMPUS SIGNAL</div><p><b>2,406</b> 个灵感<br />此刻正在发生</p><span class="signal-wave"></span></div>
+        <div class="scroll-prompt"><span>SCROLL</span><i></i></div>
+      </section>
+
+      <section class="ticker" aria-label="重要通知">
+        <p>UPDATES <span>·</span> 未来大学 2026 年本科招生章程正式发布 <span>·</span> UOT RESEARCH WEEK IS NOW OPEN <span>·</span></p>
+      </section>
+
+      <section class="news-section" id="news">
+        <div class="section-heading"><p class="eyebrow dark"><span></span> WHAT'S NEW</p><h2>此刻，正在发生</h2><a href="#" class="text-link">全部新闻 <i data-lucide="arrow-up-right"></i></a></div>
+        <div class="news-layout">
+          <article class="feature-story">
+            <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1400&q=85" alt="大学建筑" />
+            <div class="story-overlay"><p>TOP STORY / 07.24</p><h3>在真实世界里，<br />训练改变世界的能力</h3><a href="#" aria-label="阅读新闻"><i data-lucide="arrow-up-right"></i></a></div>
+          </article>
+          <div class="news-list">
+            <article><span>07.18</span><div><p>研究动态</p><h3>仿生机器人实验室完成深海环境模拟测试</h3></div><i data-lucide="arrow-up-right"></i></article>
+            <article><span>07.12</span><div><p>校园文化</p><h3>夏日音乐季b：声场之外的年轻表达</h3></div><i data-lucide="arrow-up-right"></i></article>
+            <article><span>07.05</span><div><p>国际交流</p><h3>全球青年创新论坛将于八月在校举办</h3></div><i data-lucide="arrow-up-right"></i></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus-section" id="focus">
+        <div class="focus-intro"><p class="eyebrow"><span></span> RESEARCH / 2026</p><h2>从问题出发<br />抵达更远处。</h2><p>面向真实命题，打开跨学科协作的无限可能。</p></div>
+        <div class="focus-cards">
+          <article class="focus-card card-a reveal"><span>01 / INTELLIGENCE</span><h3>人工智能<br />与人类文明</h3><a href="#"><i data-lucide="arrow-up-right"></i></a></article>
+          <article class="focus-card card-b reveal"><span>02 / EARTH</span><h3>重塑我们<br />生活的星球</h3><a href="#"><i data-lucide="arrow-up-right"></i></a></article>
+          <article class="focus-card card-c reveal"><span>03 / LIFE</span><h3>生命的<br />下一种答案</h3><a href="#"><i data-lucide="arrow-up-right"></i></a></article>
+        </div>
+      </section>
+
+      <section class="campus-section" id="campus">
+        <div class="campus-image"><img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1800&q=85" alt="校园庭院" /></div>
+        <div class="campus-content"><p class="eyebrow dark"><span></span> CAMPUS LIFE</p><h2>在这里，<br />打开另一种日常。</h2><p>午后的树林、深夜的实验室、刚开始的一场对话。大学生活并不只发生在课表里。</p><a href="#" class="solid-link">走进校园 <i data-lucide="arrow-right"></i></a></div>
+      </section>
+    </main>
+
+    <footer id="about"><div class="footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark">U</span><span><b>未来大学</b><i>UNIVERSITY OF TOMORROW</i></span></a><p>IN THE PURSUIT<br />OF POSSIBILITY.</p></div><div class="footer-bottom"><span>© 2026 UNIVERSITY OF TOMORROW</span><span>上海市未来大道 100 号</span><a href="#top">BACK TO TOP <i data-lucide="arrow-up"></i></a></div></footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../JS/main.js"></script>
+  </body>
+</html>

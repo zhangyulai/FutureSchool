@@ -1,0 +1,13 @@
+# Local desktop launchers and editor files
+*.desktop
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local credentials and generated files
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
